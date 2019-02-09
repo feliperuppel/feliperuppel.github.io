@@ -3925,6 +3925,7 @@ input, select, textarea {
 		color: #9c27b0;
 		margin-bottom: 0px;
 		margin-top: 5px;
+		font-style: italic;
 	}
 
 	hr {
