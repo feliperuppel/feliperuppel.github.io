@@ -99,34 +99,6 @@
 						<div class="inner">
 							<h2>Where I have been in the last years...</h2>
 							<div id="my-timeline"></div>
-
-							<script type="text/javascript">
-								$(document).ready(function(){
-						
-									var events = [
-										{
-											date: 'Q1 - 2018',
-											content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
-										},
-										{
-											date: 'Q2 - 2018',
-											content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
-										},
-										{
-											date: 'Q3 - 2018',
-											content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
-										}
-									];
-						
-									$('#my-timeline').roadmap(events, {
-										orientation: 'vertical',
-										eventsPerSlide: 6,
-										slide: 1,
-										prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
-										nextArrow: '<i class="material-icons">keyboard_arrow_right</i>'
-									});
-								});
-							</script>
 						</div>
 					</section>
 
@@ -208,6 +180,33 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+		
+					var events = [
+						{
+							date: 'Q1 - 2018',
+							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+						},
+						{
+							date: 'Q2 - 2018',
+							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+						},
+						{
+							date: 'Q3 - 2018',
+							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+						}
+					];
+		
+					$('#my-timeline').roadmap(events, {
+						orientation: 'vertical',
+						eventsPerSlide: 6,
+						slide: 1,
+						prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+						nextArrow: '<i class="material-icons">keyboard_arrow_right</i>'
+					});
+				});
+			</script>
 
 			<!-- Include jQuery -->
 			<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> -->
