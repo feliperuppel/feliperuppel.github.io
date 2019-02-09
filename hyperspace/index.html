@@ -22,6 +22,9 @@
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
+						<div style="width: 100%; text-align: center">
+							<a href="#intro"><img style="width: 70%" src="images/FR_logo.svg"></a>
+						</div>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#about-me">A little bit about me</a></li>
@@ -43,6 +46,8 @@
 							<p id="quotes">"Just trying to make something great before I die."</p>
 							<ul class="actions">
 								<li><a href="#about-me" class="button scrolly">Know more</a></li>
+								<li><a href="assets/Felipe_Ruppel_Resume.pdf" class="button scrolly">Curriculum Vitae</a></li>
+								<li><a href="https://www.linkedin.com/in/feliperuppel/" class="button scrolly">LinkedIn Profile</a></li>
 							</ul>
 						</div>
 					</section>
@@ -50,7 +55,7 @@
 				<!-- About me -->
 					<section id="about-me" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/firsttry2.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>First try</h2>
@@ -80,18 +85,35 @@
 								</div>
 							</div>
 						</section>
-						<!-- <section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+						<section>
+							<!-- <a href="#" class="image"><img src="images/skills.jpg" alt="" data-position="25% 25%" /></a> -->
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+									<h2>Skills</h2>
+										<div class="skill-section-container">
+											<div class="skill-section-title">
+												<h3>Languages</h3>
+											</div>
+											<div class="skill-section-itens">
+												<p><b>Portuguese</b>: Native
+												<br/><b>English</b>: Full Professional Proficiency</p>
+											</div>
+										</div>
+										<div class="skill-section-container">
+											<div class="skill-section-title">
+												<h3>Technical Expertise</h3>
+											</div>
+											<div class="skill-section-itens">
+													<p><b>Programming Languages</b>: Java, Javascript, SQL, PL/SQL
+													<br /><b>Frameworks</b>: Spring, Spring Boot, Spring Cloud, Spring Data, Hibernate, JPA, JUnit, Mockito, Selenium, JQuery, JSP, JSF, Primefaces
+													<br /><b>Tools and Services</b>: Oracle Database, Maven, SSH, Splunk, SVN, GIT, Docker, Kafka, Mongo DB, Redis, Azure
+													<br /><b>Methodologies</b>: Agile, SCRUM, TDD, BDD
+													<br /><b>Operational Systems</b>: Linux, Windows</p>
+											</div>
+										</div>
 								</div>
 							</div>
-						</section> -->
+						</section>
 					</section>
 
 				<!-- highlights -->
@@ -106,7 +128,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>Hey, if you want to talk to me, feel free :)</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -132,27 +154,22 @@
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<h3>Current Living</h3>
+											<span>Somewhere in Curitiba - Brazil</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="#">feliperuppel@gmail.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
+											<span>+55 41 991536611</span>
 										</li>
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+												<!-- <li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li> -->
+												<li><a href="https://www.linkedin.com/in/feliperuppel/" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -180,27 +197,59 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- Include jQuery Timeline Plugin -->
+			<script src="assets/jquery/jquery.roadmap.min.js" type="text/javascript"></script>
+
 			<script type="text/javascript">
 				$(document).ready(function(){
 		
 					var events = [
 						{
-							date: 'Q1 - 2018',
-							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+							date: 'October 2018 - Present',
+							content: 'GFT / Toyota Bank <br />'+
+									 '<i>Senior Software Engineer</i>',
 						},
 						{
-							date: 'Q2 - 2018',
-							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+							date: 'January 2018 - October 2018',
+							content: 'Wipro <br />'+
+							'<i>Tech Leader</i>'
 						},
 						{
-							date: 'Q3 - 2018',
-							content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+							date: 'December 2017 - October 2018',
+							content: 'Mastercard <br />'+
+							'<i>Senior BizOps Engineer</i>'
+						},
+						{
+							date: 'September 2016 - December 2017',
+							content: 'Wipro <br />'+
+							'<i>Senior Software Engineer</i>'
+						},
+						{
+							date: 'October 2014 - September 2016',
+							content: 'Wipro / Mastercard <br />'+
+							'<i>Full Stack Java Developer</i>'
+						},
+						{
+							date: 'January 2012 - September 2014',
+							content: 'Global Village Telecom (GVT) <br />'+
+							'<i>Software Developer</i>'
+						},
+						{
+							date: 'November 2010 - December 2011',
+							content: 'Global Village Telecom (GVT) <br />'+
+							'<i>Intern</i>'
+						},
+						{
+							date: 'September 2009 - October 2010',
+							content: 'Condor Super Center <br />'+
+							'<i>Computer Techician</i>'
 						}
+						
 					];
 		
 					$('#my-timeline').roadmap(events, {
-						orientation: 'vertical',
-						eventsPerSlide: 6,
+						orientation: 'auto',
+						eventsPerSlide: 4,
 						slide: 1,
 						prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
 						nextArrow: '<i class="material-icons">keyboard_arrow_right</i>'
@@ -208,11 +257,7 @@
 				});
 			</script>
 
-			<!-- Include jQuery -->
-			<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> -->
 						
-			<!-- Include jQuery Timeline Plugin -->
-			<script src="assets/jquery/jquery.roadmap.min.js" type="text/javascript"></script>
 
 	</body>
 </html>

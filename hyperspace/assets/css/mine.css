@@ -1,4 +1,27 @@
-#quotes{
+.skill-section-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px;
+    /* border: 1px solid black; */
+    
+}
+
+.skill-section-title{
+    height: 100%;
+    width: 40%;
+    float: left;
     text-align: right;
-    font-style: italic;
+    padding: 10px;
+}
+
+.skill-section-itens{
+    border-left: 1px solid black;
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 10px;
 }
