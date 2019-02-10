@@ -3036,7 +3036,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 55em;
+			/* width: 55em; */
 			-ms-flex: 1;
 		}
 
@@ -3954,4 +3954,16 @@ input, select, textarea {
 	 .skills__section{
 		background-color: #111;
 		width: 100em!important;
+	}
+
+	.jobs__section{
+		background-color: #261c3e;
+	}
+
+	.icon__color{
+		color: #660f8a;
+	}
+
+	.timeline{
+		margin-top: 100px;
 	}
