@@ -3962,6 +3962,13 @@ input, select, textarea {
 
 	.icon__color{
 		color: #660f8a;
+		text-decoration: none !important;
+	}
+
+	.timeline__arrow__position{
+		position: absolute;
+		bottom: 0px;
+
 	}
 
 	.timeline{
