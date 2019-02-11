@@ -2515,11 +2515,11 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #364156;
+					color: #111111;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #364156;
+					color: #222222;
 				}
 
 				.wrapper.style2 .icon.major:before {
@@ -3223,15 +3223,15 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #748CAB;
+			background-color: #111111;
 		}
 
 		.wrapper.style1 {
-			background-color: #364156;
+			background-color: #111111;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #364156;
+			background-color: #111111;
 		}
 
 		.wrapper.style2 {
@@ -3944,26 +3944,30 @@ input, select, textarea {
 		margin-left: 130px;
 	  }
 
-	  .first__section{
-		  background-color: #455561;
-	  }
-
-	 .titles{
+	.titles{
 		font-family: 'qonquer_sansregular';
 		font-size: 2.75em;
 	 }
 
+	.first__section{
+		  background-color: #101c36;
+	  }
+
+	.second__section{
+		background-color: #2b3a59;
+	}
+
 	 .skills__section{
-		background-color: #547AA5;
+		background-color: #101c36;
 		width: 100em!important;
 	}
 
 	.jobs__section{
-		background-color: #3A435E;
+		background-color: #2b3a59;
 	}
 
 	.contact__section{
-		background-color: #216869;
+		background-color: #101c36;
 		width: 100em!important;
 	}
 
