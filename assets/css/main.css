@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: -webkit-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: -ms-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: linear-gradient(to right, #0D1321, #52AA5E);
+				background-image: -moz-linear-gradient(to right, #0D1321, #1de270);
+				background-image: -webkit-linear-gradient(to right, #0D1321, #1de270);
+				background-image: -ms-linear-gradient(to right, #0D1321, #1de270);
+				background-image: linear-gradient(to right, #0D1321, #1de270);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2439,7 +2439,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #52AA5E;
+			color: #1de270;
 			content: '\f00c';
 		}
 
@@ -2531,11 +2531,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #52AA5E;
+					color: #1de270;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #388659;
+					color: #1de270;
 				}
 
 /* Image */
@@ -3012,7 +3012,7 @@ input, select, textarea {
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
 				/* background: rgba(49, 36, 80, 0.9); ---> NAO SEI QUANDO ISSO SER APLICADO*/  
-				background: #52AA5E;
+				background: #1de270;
 				content: '';
 				display: block;
 				height: 100%;
@@ -3749,10 +3749,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: -webkit-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: -ms-linear-gradient(to right, #0D1321, #52AA5E);
-				background-image: linear-gradient(to right, #0D1321, #52AA5E);
+				background-image: -moz-linear-gradient(to right, #0D1321, #1de270);
+				background-image: -webkit-linear-gradient(to right, #0D1321, #1de270);
+				background-image: -ms-linear-gradient(to right, #0D1321, #1de270);
+				background-image: linear-gradient(to right, #0D1321, #1de270);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3841,7 +3841,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #52AA5E;
+							background-color: #1de270;
 						}
 
 		}
@@ -3924,15 +3924,15 @@ input, select, textarea {
 
 	.under__text--quote{
 		/* color: #9c27b0; */
-		color: #388659;
+		color: #1de270;
 		margin-bottom: 0px;
 		margin-top: 5px;
 		font-style: italic;
 	}
 
 	hr {
-		color: #388659;
-		background-color: #388659;
+		color: #1de270;
+		background-color: #1de270;
 		height: 5px;
 		width: 8vw;
 		margin: 15px 0px 50px 0px;
@@ -3972,7 +3972,7 @@ input, select, textarea {
 	}
 
 	.icon__color{
-		color: #388659;
+		color: #1de270;
 		text-decoration: none !important;
 	}
 
