@@ -104,35 +104,35 @@
     display: block
 }
 
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) {
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) {
     bottom: 0
 }
 
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):before {
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even):before {
     top: -8px
 }
 
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):after {
-    top: 0
-}
-
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
-    top: 80px
-}
-
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) {
-    top: 0
-}
-
-.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even):before {
-    bottom: -12px
-}
-
 .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even):after {
-    bottom: -4px
+    top: 0
 }
 
 .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) .event {
+    top: 80px
+}
+
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) {
+    top: 0
+}
+
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):before {
+    bottom: -12px
+}
+
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):after {
+    bottom: -4px
+}
+
+.roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
     bottom: 80px
 }
 
@@ -313,7 +313,7 @@
 
 @media only screen and (max-width:992px) {
 
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) .event {
         top: -15px;
     }
 
@@ -362,7 +362,7 @@
         bottom: auto;
         width: 40%
     }
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):after {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even):after {
         -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         -o-transform: translateX(-100%);
@@ -374,22 +374,22 @@
     .roadmap.roadmap--orientation-auto .roadmap__events__event .event {
         width: 50%
     }
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) .event {
         margin-left: -10%
     }
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) .event {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
         margin-right: -10%
     }
 }
 
 @media only screen and (max-width:992px) {
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even):after {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd):after {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
         transform: translateX(0)
     }
-    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(even) .event {
+    .roadmap.roadmap--orientation-auto .roadmap__events__event:nth-child(odd) .event {
         right: 0
     }
     .roadmap.roadmap--orientation-auto.roadmap--initialized .roadmap__events:after {
@@ -414,13 +414,13 @@
 }
 
 @media only screen and (max-width:992px) {
-    .roadmap.roadmap--orientation-auto.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(odd):after {
+    .roadmap.roadmap--orientation-auto.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(even):after {
         -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         -o-transform: translateX(-100%);
         transform: translateX(-100%)
     }
-    .roadmap.roadmap--orientation-auto.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(even):after {
+    .roadmap.roadmap--orientation-auto.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(odd):after {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
@@ -520,35 +520,35 @@
     display: block
 }
 
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd) {
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even) {
     bottom: 0
 }
 
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd):before {
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even):before {
     top: -8px
 }
 
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd):after {
-    top: 0
-}
-
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd) .event {
-    top: 80px
-}
-
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even) {
-    top: 0
-}
-
-.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even):before {
-    bottom: -12px
-}
-
 .roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even):after {
-    bottom: -4px
+    top: 0
 }
 
 .roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(even) .event {
+    top: 80px
+}
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd) {
+    top: 0
+}
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd):before {
+    bottom: -12px
+}
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd):after {
+    bottom: -4px
+}
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:nth-child(odd) .event {
     bottom: 80px
 }
 
@@ -801,31 +801,31 @@
     display: block
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) {
     bottom: 0
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):before {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):before {
     top: -8px
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):after {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):after {
     top: 0
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) {
     top: 0
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):before {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):before {
     bottom: -12px
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):after {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):after {
     bottom: -4px
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) .event {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) .event {
     bottom: 80px
 }
 
@@ -1044,21 +1044,21 @@
     width: 40%
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):after {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):after {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even):after {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd):after {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0)
 }
 
-.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) .event {
+.roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) .event {
     right: 0
 }
 
@@ -1066,10 +1066,10 @@
     .roadmap.roadmap--orientation-vertical .roadmap__events__event .event {
         width: 50%
     }
-    .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) .event {
+    .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) .event {
         margin-left: -10%
     }
-    .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(even) .event {
+    .roadmap.roadmap--orientation-vertical .roadmap__events__event:nth-child(odd) .event {
         margin-right: -10%
     }
 }
@@ -1090,14 +1090,14 @@
     }
 }
 
-.roadmap.roadmap--orientation-vertical.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(odd):after {
+.roadmap.roadmap--orientation-vertical.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(even):after {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
-.roadmap.roadmap--orientation-vertical.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(even):after {
+.roadmap.roadmap--orientation-vertical.roadmap--initialized .roadmap__events .roadmap__events__event:nth-child(odd):after {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
