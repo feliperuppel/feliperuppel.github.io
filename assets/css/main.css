@@ -3795,6 +3795,12 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#particles-js{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		 }
+
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
@@ -3866,7 +3872,6 @@ input, select, textarea {
 			 }
 
 		}
-
 			
 	#salute-full{
 		display: block;
@@ -4013,18 +4018,9 @@ input, select, textarea {
 
 	  .main__info{
 		position: absolute;	
-		margin-top: 130px;
+		/* margin-top: 130px; */
 		margin-left: 130px;
 	  }
-
-	  /* @media screen and (max-height: 460px) {
-
-		.main__info{
-			margin-top: 50px !important;
-		}
-
-	} */
-
 
 	.titles{
 		font-family: 'qonquer_sansregular';
@@ -4032,15 +4028,15 @@ input, select, textarea {
 	 }
 
 	.first__section{
-		  background-color: #101c36;
+		  background-color: #101c36 !important;
 	  }
 
 	.second__section{
-		background-color: #15213e;
+		background-color: #15213e !important;
 	}
 
 	 .skills__section{
-		background-color: #101c36;
+		background-color: #101c36 !important;
 		/*width: 100em!important;*/
 	}
 
@@ -4063,11 +4059,11 @@ input, select, textarea {
 
 
 	.jobs__section{
-		background-color: #15213e;
+		background-color: #15213e !important;
 	}
 
 	.contact__section{
-		background-color: #101c36;
+		background-color: #101c36 !important;
 		/* width: 100em!important; */
 	}
 
