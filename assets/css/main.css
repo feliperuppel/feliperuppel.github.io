@@ -3855,7 +3855,26 @@ input, select, textarea {
 							background-color: #1de270;
 						}
 
+			 #particles-js{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			 }
+			 .main__info{
+				 margin: 0 !important;
+			 }
+
 		}
+
+			
+	#salute-full{
+		display: block;
+	}
+
+	#salute-name{
+		display: none;
+	}
 
 		@media screen and (max-width: 736px) {
 
@@ -3868,7 +3887,15 @@ input, select, textarea {
 			}
 
 			.main__info{
-				margin-left: 60px !important;
+				margin: 20px !important;
+			}
+
+			#salute-full{
+				display: none;
+			}
+			
+			#salute-name{
+				display: block;
 			}
 
 		}
@@ -3989,6 +4016,15 @@ input, select, textarea {
 		margin-top: 130px;
 		margin-left: 130px;
 	  }
+
+	  /* @media screen and (max-height: 460px) {
+
+		.main__info{
+			margin-top: 50px !important;
+		}
+
+	} */
+
 
 	.titles{
 		font-family: 'qonquer_sansregular';
