@@ -4005,6 +4005,16 @@ input, select, textarea {
 		padding-right: 40px;
 	}
 
+		@media screen and (max-width: 980px) {
+
+			.skill-section-title{
+				text-align: right;
+				padding-right: 40px;
+				margin-bottom: -60px;
+			}
+
+		}
+
 	.jobs__section{
 		background-color: #15213e;
 	}
