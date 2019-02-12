@@ -3932,11 +3932,38 @@ input, select, textarea {
 	}
 
 	hr {
-		color: #1de270;
-		background-color: #1de270;
-		height: 5px;
-		width: 8vw;
+		/* color: #1de270;
+		background-color: #1de270; */
+		/* border-radius: 0.2em; */
+		height: 3px; 
+		border-radius: 10em;
+		width: 20vw;
 		margin: 15px 0px 50px 0px;
+		content: '';
+
+		background-image: -moz-linear-gradient(to right, #1de270, #1de26f00);
+		background-image: -webkit-linear-gradient(to right, #1de270, #1de26f00);
+		background-image: -ms-linear-gradient(to right, #1de270, #1de26f00);
+		background-image: linear-gradient(to right, #1de270, #1de26f00);
+	  }
+
+	  .under__text--title {
+		/* color: #1de270;
+		background-color: #1de270; */
+		/* border-radius: 0.2em; */
+		height: 3px; 
+		border-radius: 10em;
+		width: 10vw;
+		margin: -25px 0px 50px 0px;
+		content: '';
+		opacity: 0.2;
+
+		background-image: -moz-linear-gradient(to right, #1de270, #fcfcfc00);
+		background-image: -webkit-linear-gradient(to right, #1de270, #fcfcfc00);
+		background-image: -ms-linear-gradient(to right, #1de270, #fcfcfc00);
+		background-image: linear-gradient(to right, #1de270, #fcfcfc00);
+
+
 	  }
 
 	  .main__info{
