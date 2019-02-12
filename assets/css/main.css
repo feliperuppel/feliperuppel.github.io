@@ -3862,10 +3862,7 @@ input, select, textarea {
 						}
 
 			 #particles-js{
-				display: flex;
-				flex-direction: row;
 				justify-content: center;
-				align-items: center;
 			 }
 			 .main__info{
 				 margin: 0 !important;
