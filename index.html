@@ -131,7 +131,11 @@
 				<p>Hey, if you want to talk to me, feel free to send me a message :)</p>
 				<div class="split contact__section">
 					<section>
-						<form method="post" action="https://formspree.io/feliperuppel@gmail.com" target="_blank">
+						<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec">
+							
+							<label class="sr-only" style="display:none;">Keep this field blank</label> <!-- Should not be visible to humans-->
+  							<input id="honeypot" type="text" name="honeypot" value="" style="display:none;" /><!-- Should not be visible to humans-->
+
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -149,6 +153,13 @@
 							<ul class="actions">
 								<li><a href="" class="button submit">Send Message</a></li>
 							</ul>
+
+							<div style="display:none" class="thankyou_message">
+								<!-- You can customize the thankyou message by editing the code below -->
+								<h2><em>Thanks</em> for contacting me! I will get back to you soon!
+								</h2>
+							</div>
+
 						</form>
 					</section>
 					<section>
@@ -194,6 +205,7 @@
 	</footer>
 
 	<!-- Scripts -->
+	<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
