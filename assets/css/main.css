@@ -3863,6 +3863,14 @@ input, select, textarea {
 				display: none;
 			}
 
+			h1{
+				font-size: 50px !important;
+			}
+
+			.main__info{
+				margin-left: 60px !important;
+			}
+
 		}
 
 /* Intro */
