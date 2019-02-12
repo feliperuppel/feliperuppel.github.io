@@ -372,6 +372,14 @@ input, select, textarea {
 			order: -1;
 		}
 
+		.row > .col-custom-left{
+			width: 30vw;
+		}
+
+		.row > .col-custom-right{
+			width: 70vw;
+		}
+
 		.row > .col-1 {
 			width: 8.3333333333%;
 		}
@@ -3988,6 +3996,15 @@ input, select, textarea {
 	 .skills__section{
 		background-color: #101c36;
 		width: 100em!important;
+	}
+
+	.skill-section-title{
+		text-align: right;
+		padding-right: 40px;
+	}
+
+	.skill-section-itens{
+		border-left: 1px solid #1de270 !important;
 	}
 
 	.jobs__section{
