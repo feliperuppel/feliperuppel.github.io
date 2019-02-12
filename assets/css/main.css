@@ -4068,13 +4068,3 @@ input, select, textarea {
 		color: #1de270;
 		text-decoration: none !important;
 	}
-
-	.timeline__arrow__position{
-		position: absolute;
-		bottom: 0px;
-
-	}
-
-	.timeline{
-		margin-top: 100px;
-	}
