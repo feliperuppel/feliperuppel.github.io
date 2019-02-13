@@ -3889,9 +3889,9 @@ input, select, textarea {
 				font-size: 50px !important;
 			}
 
-			.main__info{
+			/* .main__info{
 				margin: 20px !important;
-			}
+			} */
 
 			#salute-full{
 				display: none;
@@ -4068,4 +4068,10 @@ input, select, textarea {
 	.icon__color{
 		color: #1de270;
 		text-decoration: none !important;
+	}
+
+	.shrink{
+		width: auto !important; 
+		padding: 0 !important; 
+		margin: 0 !important;
 	}
