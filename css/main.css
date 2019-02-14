@@ -125,7 +125,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, .modal-content {
 				font-size: 13pt;
 			}
 
@@ -133,7 +133,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, .modal-content{
 				font-size: 12pt;
 			}
 
@@ -141,7 +141,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 360px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, .modal-content {
 				font-size: 11pt;
 			}
 
@@ -4097,6 +4097,7 @@ input, select, textarea {
 		background-color: rgba(255, 255, 255, 0.37) !important;
 		z-index: 10;
 		display: flex;
+		orientation: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
@@ -4107,26 +4108,21 @@ input, select, textarea {
 	  }
 	  
 	  .modal-content {
-		max-width: 600px;
-		max-height: 85%;
-		position: absolute;
+		position: relative;
 		z-index: 20;
 		border-radius: 25px;
 		background: #090020 !important;
 		color: #1de270 !important;
+		/* border: 0.5px solid #107e3e; */
 		opacity: 1 !important;
 		padding: 20px;	
-		z-index: 20;
-		-webkit-transform: translate(-50%, 0);
-		-ms-transform: translate(-50%, 0);
-		transform: translate(-50%, 0);
-		-webkit-transition: all 0.5s ease-in-out;
+		margin: 0px;	
 		transition: all 0.5s ease-in-out;
+		box-shadow: 0px 5px 50px #000000;
 	  }
 	  
 	  @media screen and (max-width: 767px) {
 		.modal-content {
-		  /* padding: 10px 5%; */
-		  min-width: 88%;
+		  padding: 10px;
 		}
 	  }
