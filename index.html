@@ -153,14 +153,17 @@
 									<div class="field half">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
+										<div id="empty-name-message" class="hide error-message">* What is your name?</div>
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
 										<input type="text" name="email" id="email" />
+										<div id="invalid-email-message" class="hide error-message">* Invalid email</div>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="5"></textarea>
+										<div id="empty-message-message" class="hide error-message">* What do you want to talk about?</div>
 									</div>
 								</div>
 								<ul class="actions">
@@ -318,15 +321,64 @@
 				var email = $("#email").val();
 				var message = $("#message").val();
 
-				// action="https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec"
-				console.log("about to post : " + name + " : " + email + " : " + message);
-				$.post("https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec", {name: name, email: email, message: message}, function(result){
-					$("#modal").removeClass("hide");
-					$("#modal").addClass("show");
-					$("#modal").addClass("modal");
-					$("#modal-content").removeClass("hide");
-					$("#modal-content").addClass("show");
-				});
+				var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+				var validEmail =  regex.test(email);
+
+				var hasValidationError = false;
+
+				console.log("email : " + email)
+				if(!validEmail){
+					$("#email").addClass("error");
+					$("#invalid-email-message").addClass("show");
+					$("#invalid-email-message").removeClass("hide");
+					hasValidationError = true;
+				}
+				console.log("name : " + name)
+				if(name == ""){
+					$("#name").addClass("error");
+					$("#empty-name-message").addClass("show");
+					$("#empty-name-message").removeClass("hide");
+					hasValidationError = true;
+				}
+				console.log("message : " + message)
+				if(message == ""){
+					$("#message").addClass("error");
+					$("#empty-message-message").addClass("show");
+					$("#empty-message-message").removeClass("hide");
+					hasValidationError = true;
+				}
+
+				if(hasValidationError){
+					console.log("There are validation errors, will not send the email");
+					return false;
+				}else{
+					console.log("About to Send the email : " + name + " : " + email + " : " + message);
+					$.post("https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec", {name: name, email: email, message: message}, function(result){
+						$("#modal").removeClass("hide");
+						$("#modal").addClass("show");
+						$("#modal").addClass("modal");
+						$("#modal-content").removeClass("hide");
+						$("#modal-content").addClass("show");
+					});
+				}
+			});
+
+			$("#email").click(function(){
+				$("#email").removeClass("error");
+				$("#invalid-email-message").removeClass("show");
+				$("#invalid-email-message").addClass("hide");
+			});
+
+			$("#name").click(function(){
+				$("#name").removeClass("error");
+				$("#empty-name-message").removeClass("show");
+				$("#empty-name-message").addClass("hide");
+			});
+
+			$("#message").click(function(){
+				$("#message").removeClass("error");
+				$("#empty-message-message").removeClass("show");
+				$("#empty-message-message").addClass("hide");
 			});
 
 			$("#modal").click(function(){

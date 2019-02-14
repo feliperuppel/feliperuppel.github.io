@@ -4126,3 +4126,14 @@ input, select, textarea {
 		  padding: 10px;
 		}
 	  }
+
+	  .error-message{
+		  color: rgb(173, 7, 7);
+		  font-size: 12pt;
+		  text-align: right;
+		  font-style: italic;
+	  }
+
+	  .error{
+		  border: red solid 3px !important;
+	  }
