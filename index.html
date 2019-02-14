@@ -144,35 +144,35 @@
 				Oh, you can download my <a target="_blank" href="Felipe_Ruppel_Resume.pdf">resume here </a></p>
 				<div class="split contact__section">
 					<section>
-						<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec">
-							
-							<label class="sr-only" style="display:none;">Keep this field blank</label> <!-- Should not be visible to humans-->
-  							<input id="honeypot" type="text" name="honeypot" value="" style="display:none;" /><!-- Should not be visible to humans-->
+						<form id="gform" class="gform" action="#contact">
+								<label class="sr-only" style="display:none;">Keep this field blank</label> <!-- Should not be visible to humans-->
+								<input id="honeypot" type="text" name="honeypot" value="" style="display:none;" /><!-- Should not be visible to humans-->
 
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="5"></textarea>
+									</div>
 								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><a href="" class="button submit">Send Message</a></li>
-							</ul>
+								<ul class="actions">
+									<li><a id="button-submit" class="button submit">Send Message</a></li>
+								</ul>
 
-							<div style="display:none" class="thankyou_message">
-								<!-- You can customize the thankyou message by editing the code below -->
-								<h2><em>Thanks</em> for contacting me! I will get back to you soon!
-								</h2>
-							</div>
-
+								<div id="modal" class="hide">
+									<div id="modal-content" class="modal-content hide">
+										<hr>
+										<h4><em>Thanks</em> for contacting me! <br>I will get back to you soon!</h4>
+										<p><i>Meanwhile feel free to add me on <a target="_blank" href="https://www.linkedin.com/in/feliperuppel/">LinkedIn</a></i></p>
+									</div>
+								</div>
 						</form>
 					</section>
 					<section>
@@ -224,7 +224,7 @@
 	</footer>
 
 	<!-- Scripts -->
-	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+	<!-- <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.scrollex.min.js"></script>
 	<script src="js/jquery.scrolly.min.js"></script>
@@ -293,8 +293,42 @@
 				prevArrow: '<i class="fa fa-long-arrow-left fa-3 icon__color" aria-hidden="true"></i>',
 				nextArrow: '<i class="fa fa-long-arrow-right fa-3 icon__color" aria-hidden="true"></i>' 
 			});
+
+			$("#gform").submit(function(e){
+				e.preventDefault;
+				return false;
+			});
+
+
+			$("#button-submit").click(function(){
+				console.log("Email attempt detected");
+				
+				var honeypot = $("#honeypot").val();
+
+				if (honeypot != "") {  //if hidden form filled up
+					console.log("Robot Detected!");
+					return false;
+				} else {
+					console.log("Welcome Human!");
+				}
+
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var message = $("#message").val();
+
+				// action="https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec"
+				console.log("about to post : " + name + " : " + email + " : " + message);
+				$.post("https://script.google.com/macros/s/AKfycbxzZ4mP_uujkpARPBB93F91gfrMgT3CGPmsjXtobA/exec", {name: name, email: email, message: message}, function(result){
+					$("#modal").removeClass("hide");
+					$("#modal").addClass("show");
+					$("#modal").addClass("modal");
+					$("#modal-content").removeClass("hide");
+					$("#modal-content").addClass("show");
+				});
+			});
 		});
 	</script>
+	
 
 	<!-- stats.js This adds a small box on the top left corner with some statistcs like FPS when particles are running.. no need to keep it on daly basis-->
 	<!-- <script src="js/lib/stats.js"></script>
