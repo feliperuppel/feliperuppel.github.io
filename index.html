@@ -307,6 +307,9 @@
 
 			$("#button-submit").click(function(){
 				console.log("Email attempt detected");
+
+				$("#button-submit").addClass("not-active");
+				$("#button-submit").text('Sending...');
 				
 				var honeypot = $("#honeypot").val();
 
@@ -350,6 +353,8 @@
 
 				if(hasValidationError){
 					console.log("There are validation errors, will not send the email");
+					$("#button-submit").removeClass("not-active");
+					$("#button-submit").text('Send Message');
 					return false;
 				}else{
 					console.log("About to Send the email : " + name + " : " + email + " : " + message);
@@ -359,23 +364,25 @@
 						$("#modal").addClass("modal");
 						$("#modal-content").removeClass("hide");
 						$("#modal-content").addClass("show");
+						$("#button-submit").removeClass("not-active");
+						$("#button-submit").text('Send Message');
 					});
 				}
 			});
 
-			$("#email").click(function(){
+			$("#email").focus(function(){
 				$("#email").removeClass("error");
 				$("#invalid-email-message").removeClass("show");
 				$("#invalid-email-message").addClass("hide");
 			});
 
-			$("#name").click(function(){
+			$("#name").focus(function(){
 				$("#name").removeClass("error");
 				$("#empty-name-message").removeClass("show");
 				$("#empty-name-message").addClass("hide");
 			});
 
-			$("#message").click(function(){
+			$("#message").focus(function(){
 				$("#message").removeClass("error");
 				$("#empty-message-message").removeClass("show");
 				$("#empty-message-message").addClass("hide");

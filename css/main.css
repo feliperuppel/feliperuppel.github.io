@@ -4137,3 +4137,10 @@ input, select, textarea {
 	  .error{
 		  border: red solid 3px !important;
 	  }
+
+	  .not-active {
+		pointer-events: none;
+		cursor: default;
+		text-decoration: none;
+		color: black;
+	  }
