@@ -3889,9 +3889,9 @@ input, select, textarea {
 				font-size: 50px !important;
 			}
 
-			/* .main__info{
-				margin: 20px !important;
-			} */
+			 .main__info{
+				margin: 10px !important;
+			}
 
 			#salute-full{
 				display: none;
